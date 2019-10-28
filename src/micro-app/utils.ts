@@ -1,6 +1,5 @@
 export const appName = 'app1';
 
-export const mainApp = 'MAIN_APP';
 const _key = (appName: string, event: string): string => `${appName}/${event}`;
 
 export const dispatchMicroAppEvent = async (event: any, agrs: any) => {
