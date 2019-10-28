@@ -1,7 +1,7 @@
 export const appName = 'app1';
 
 export const mainApp = 'MAIN_APP';
-const _key = (appName: string, event: string) => `${appName}/${event}`;
+const _key = (appName: string, event: string): string => `${appName}/${event}`;
 
 export const dispatchMicroAppEvent = async (event: any, agrs: any) => {
     await sessionStorage.setItem(_key(appName, event), JSON.stringify(agrs));
